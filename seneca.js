@@ -6,7 +6,6 @@ const program = require('commander');
  * Process command line arguments - using npm commander library
  */
 program
-.arguments("")
  .option('-v, --verify <email>', 'verifies the email address given as a Seneca email')
  .option('-f, --format <name>', 'formats the name given as a Seneca email')
  .parse(process.argv);
