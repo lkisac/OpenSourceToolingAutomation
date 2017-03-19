@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var program = require('commander');
+const program = require('commander');
 
 /**
  * Process command line arguments - using npm commander library
