@@ -1,0 +1,25 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "description": "Open Source Tooling and Automation",
+  "main": "seneca.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkisac/OpenSourceToolingAutomation.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lkisac/OpenSourceToolingAutomation/issues"
+  },
+  "homepage": "https://github.com/lkisac/OpenSourceToolingAutomation#readme",
+  "bin": {
+    "seneca": "./seneca.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
