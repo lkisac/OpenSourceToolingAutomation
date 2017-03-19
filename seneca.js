@@ -27,8 +27,8 @@ exports.formatSenecaEmail = function (name) {
   return name + "@myseneca.ca";
 };
 
-let email = program.verify;
-let name = program.format;
+const email = program.verify;
+const name = program.format;
 
 if (program.verify) {
   console.log("email: " + email);
