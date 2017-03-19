@@ -24,17 +24,17 @@ exports.isValidEmail = function (email) {
  * this person. NOTE: the email doesn't need to be real/valid/active.
  */
 exports.formatSenecaEmail = function (name) {
-  return name + "@myseneca.ca";
+  return `${name}@myseneca.ca`;
 };
 
 const email = program.verify;
 const name = program.format;
 
 if (program.verify) {
-  console.log("email: " + email);
+  console.log(`email: ${email}`);
   console.log(exports.isValidEmail(email));
 }
 if (program.format) {
-  console.log("name: " + name);
+  console.log(`name: ${name}`);
   console.log(exports.formatSenecaEmail(name));
 }
