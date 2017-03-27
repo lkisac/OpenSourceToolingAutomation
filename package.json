@@ -4,8 +4,9 @@
   "description": "Open Source Tooling and Automation",
   "main": "seneca.js",
   "scripts": {
-    "lint": "node_modules/.bin/eslint *.js",
-    "test": "npm run -s lint"
+    "lint": "node_modules/.bin/eslint seneca.js",
+    "jest": "node_modules/.bin/jest",
+    "test": "npm run -s lint && npm run jest"
   },
   "repository": {
     "type": "git",
