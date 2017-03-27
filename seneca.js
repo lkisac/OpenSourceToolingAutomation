@@ -16,7 +16,7 @@ program
  */
 exports.isValidEmail = function isValidEmail(email) {
   const regex = /^\w+@myseneca.ca$/;
-  return regex.test(email) ? 'valid' : 'invalid';
+  return regex.test(email);
 };
 
 /**
