@@ -24,6 +24,10 @@ exports.isValidEmail = function isValidEmail(email) {
  * this person. NOTE: the email doesn't need to be real/valid/active.
  */
 exports.formatSenecaEmail = function formatSenecaEmail(name) {
+  if (name.match(/[^A-Za-z0-9.]/)) {
+    return false;
+  }
+
   return `${name}@myseneca.ca`;
 };
 

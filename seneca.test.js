@@ -53,4 +53,14 @@ describe('seneca.formatSenecaEmail()', function() {
     expect(seneca.formatSenecaEmail(name)).toBe('mshaw@myseneca.ca');
   });
 
+  test('returns false for name containing spaces', function() {
+    var name = "lk isac";
+    expect(seneca.formatSenecaEmail(name)).toBe(false);
+  });
+
+  test('returns false for name containing tabs', function() {
+    var name = "lk  isac";
+    expect(seneca.formatSenecaEmail(name)).toBe(false);
+  });
+
 });
