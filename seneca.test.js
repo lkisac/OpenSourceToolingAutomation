@@ -16,6 +16,31 @@ describe('seneca.isValidEmail()', function() {
     expect(seneca.isValidEmail(gmailAddress)).toBe(false);
   });
 
+  test('returns false for a non-String', function() {
+    var nonStringAddress = 1;
+    expect(seneca.isValidEmail(nonStringAddress)).toBe(false);
+  });
+
+  test('returns false for null passed in', function() {
+    var nullVal = null;
+    expect(seneca.isValidEmail(nullVal)).toBe(false);
+  });
+
+  test('returns false for leading whitespace', function() {
+    var leadingWhitespaceString = " lkisac@myseneca.ca";
+    expect(seneca.isValidEmail(leadingWhitespaceString)).toBe(false);
+  });
+
+  test('returns true for professor format email', function() {
+    var professorEmail = "david.humphrey@senecacollege.ca";
+    expect(seneca.isValidEmail(professorEmail)).toBe(true);
+  });
+
+  test('returns true for professor alternate format email', function() {
+    var professorAlternateEmail = "david.humphrey@senecac.on.ca";
+    expect(seneca.isValidEmail(professorAlternateEmail)).toBe(true);
+  });
+
 });
 
 /**

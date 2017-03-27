@@ -15,7 +15,7 @@ program
  * of a valid Seneca College email address, `false` othewise.
  */
 exports.isValidEmail = function isValidEmail(email) {
-  const regex = /^\w+@myseneca.ca$/;
+  const regex = /^\w+(\.\w+)?@(myseneca|senecacollege|senecac.on).ca$/;
   return regex.test(email);
 };
 
