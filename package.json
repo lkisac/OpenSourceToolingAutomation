@@ -22,7 +22,8 @@
     "seneca": "./seneca.js"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "express": "^4.15.2"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
